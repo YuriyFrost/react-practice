@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+  margin: 50px auto 0;
+}
+.filters {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.ant-checkbox-group {
+  display: block;
+}
+.ant-checkbox-wrapper {
+  display: flex;
+}
+.ticketsBlock {
+  width: 67%;
+  border-radius: 5px;
+}
+.sorting {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #DFE5EC;
+  margin-bottom: 20px;
+}
+.sort {
+  width: 50%;
+  padding: 15px;
+  color: #4A4A4A;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.sort_active {
+  color: #fff;
+  background-color: #2196F3;
+}
+.ticket {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.ticket:not(:last-child) {
+  margin-bottom: 20px;
+}
+.ticket__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ticketInfo__row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.ticketInfo__column {
+  width: 33.333%;
+  text-align: left;
+}
+.title {
+  color: #A0B0B9;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.ticket__value {
+  color: #4A4A4A;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.addTickets {
+  background-color: #2196F3;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.price {
+  color: #2196F3;
+  font-size: 24px;
+  font-weight: 600; 
+}
