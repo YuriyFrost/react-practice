@@ -1,7 +1,7 @@
 import React from 'react'
 import { Price } from './Price'
 import { LogoCompany } from './LogoCompany'
-import { TicketInfoRow } from './TicketInfo__row'
+import { TicketInfoRow } from './TicketInfoRow'
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 dayjs.extend(duration)
@@ -17,6 +17,7 @@ export const Ticket = (props) => {
                 <LogoCompany />
             </div>
             <div className='ticketInfo'>
+                {/* todo: предвычислить данные перед занесением в store, добавить их в билеты */}
                 <TicketInfoRow 
                     from={forward.origin} 
                     to={forward.destination}

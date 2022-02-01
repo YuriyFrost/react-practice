@@ -1,0 +1,5 @@
+export const SORTING = 'SORTING'
+export const TICKETS = 'TICKETS'
+export const CHECKBOXES = 'CHECKBOXES'
+export const SHOW_LOADER = 'SHOW__LOADER'
+export const HIDE_LOADER = 'HIDE__LOADER'

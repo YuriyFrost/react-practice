@@ -1,6 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Checkbox } from 'antd'
-import {MyContext} from '../context'
+import { useDispatch } from 'react-redux';
+import { setCheckboxes } from '../redux/actions';
 
 const CheckboxGroup = Checkbox.Group;
 
@@ -11,14 +12,14 @@ const plainOptions = [{label: 'Без пересадок', value: 0}, {label: '1
 const defaultCheckedList = [0, 1, 2, 3, 4, 5, 6]
 
 export const Checks = () => {
-  const {onFilterChange} = useContext(MyContext)
+  const dispatch = useDispatch()
   const [checkedList, setCheckedList] = React.useState(defaultCheckedList);
   const [indeterminate, setIndeterminate] = React.useState(false);
   const [checkAll, setCheckAll] = React.useState(true);
 
   const handleChange = (list) => {
     setCheckedList(list)
-    onFilterChange(list)
+    dispatch(setCheckboxes(list))
   }
 
   const onChange = list => {

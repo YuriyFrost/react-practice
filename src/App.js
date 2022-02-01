@@ -1,8 +1,8 @@
 import React from 'react'
 import {Logo} from './components/Logo'
 import {Main} from './components/Main'
-import './App.css'
 import 'antd/dist/antd.css'
+import './index.css'
 
 function App() {
   return (
