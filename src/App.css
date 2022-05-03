@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  background-color: #F3F7FA;
+  background-color: #f3f7fa;
   min-height: 100vh;
   padding: 60px 0;
-  font-family: 'Open Sans'
+  font-family: 'Open Sans';
 }
 
 /* .App-logo {

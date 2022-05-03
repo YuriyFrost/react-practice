@@ -5,17 +5,17 @@ import { fetchTickets } from '../redux/actions'
 import { useDispatch } from 'react-redux'
 
 export const Main = () => {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(fetchTickets())
-    }, [dispatch])
-    return (
-        <div className='main'>
-            <div className='filters'>
-                <Checks/>
-            </div>
-            <TicketsBlock/>
-        </div>
-    )
+  useEffect(() => {
+    dispatch(fetchTickets())
+  }, [dispatch])
+  return (
+    <div className="main">
+      <div className="filters">
+        <Checks />
+      </div>
+      <TicketsBlock />
+    </div>
+  )
 }
