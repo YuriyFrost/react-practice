@@ -22,8 +22,8 @@ export const useSortingTickets = () => {
     if (checks.length === 0) {
       return newArr
     }
-    for (const check of checks) {
-      for (const elem of arr) {
+    for (const elem of arr) {
+      for (const check of checks) {
         if (check === elem.segments[0].stops.length + elem.segments[1].stops.length) {
           newArr.push(elem)
         }
@@ -31,7 +31,7 @@ export const useSortingTickets = () => {
     }
     return newArr
   }
-  const filteredTickets = filterTickets(checkboxes, tickets)
-  const sortedTickets = sortMethods[sorting](filteredTickets)
-  return sortedTickets
+  const sortedTickets = sortMethods[sorting](tickets)
+  const filteredTickets = filterTickets(checkboxes, sortedTickets)
+  return filteredTickets
 }

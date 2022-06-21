@@ -201,6 +201,6 @@ app.listen(3001, () => {
 
 
 app.get('/api/server', (req, res) => {
-  res.set({'Access-Control-Allow-Origin': 'http://localhost:3000'})
+  res.set({'Access-Control-Allow-Origin': '*'})
   res.json(servers)
 })

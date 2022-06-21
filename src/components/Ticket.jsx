@@ -6,8 +6,8 @@ import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 dayjs.extend(duration)
 
-export const Ticket = (props) => {
-  const dataTicket = props.ticket
+export const Ticket = ({ticket}) => {
+  const dataTicket = ticket
   const forward = dataTicket.segments[0]
   const back = dataTicket.segments[1]
   return (
